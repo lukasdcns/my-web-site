@@ -1,0 +1,8 @@
+.github/
+.husky/
+.next/
+.semantic/
+.vscode/
+.idea/
+node_modules/
+public/
