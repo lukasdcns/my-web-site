@@ -32,6 +32,19 @@
         "semi": [
             "error",
             "always"
-        ]
+        ],
+        "react/prop-types": "off"
+    },
+    "settings": {
+        "import/resolver": {
+            "alias": {
+                "map": [
+                    ["@/images", "./src/images"],
+                    ["@/styles", "./src/styles"],
+                    ["@/components", "./src/components"]
+                ],
+                "extensions": [".js"]
+            }
+        }
     }
 }

@@ -1,0 +1,47 @@
+/*===========================================
+                    FONTS
+===========================================*/
+@font-face {
+    font-family: 'Open Sauce One Regular';
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+    src: url(/fonts/OpenSauceOne-Regular.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: 'Open Sauce One Medium';
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+    src: url(/fonts/OpenSauceOne-Medium.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: 'Open Sauce One SemiBold';
+    font-weight: 800;
+    font-display: swap;
+    font-style: normal;
+    src: url(/fonts/OpenSauceOne-SemiBold.woff2) format("woff2");
+}
+
+/*===========================================
+                    GLOBAL
+===========================================*/
+
+:root {
+    --font-fallback: -apple-system, SF Pro, sans-serif;
+    --font-regular: 'Open Sauce One Regular', var(--font-fallback);
+    --font-medium: 'Open Sauce One Medium', var(--font-fallback);
+    --font-semibold: 'Open Sauce One SemiBold', var(--font-fallback);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-regular);
+    padding: 0 calc(1.5rem * .5);
+}
