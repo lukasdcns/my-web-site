@@ -19,7 +19,6 @@ module.exports = {
 				path: `${__dirname}/data`,
 			},
 		},
-		"gatsby-plugin-sharp",
 		{
 			resolve: "gatsby-plugin-alias-imports",
 			options: {
@@ -31,6 +30,19 @@ module.exports = {
 					"@images": "src/images",
 				},
 				extensions: ["js"],
+			},
+		},
+		{
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				name: `Lukas Descoins - Développeur`,
+				short_name: `Lukasdcns`,
+				start_url: `/`,
+				background_color: `#ffffff`,
+				theme_color: `#ffffff`,
+				display: `fullscreen`,
+				icon: `src/images/favicon_io/favicon.ico`,
+				cache_busting_mode: "none",
 			},
 		},
 	],
