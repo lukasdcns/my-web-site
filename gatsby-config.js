@@ -10,6 +10,16 @@ module.exports = {
 		"gatsby-plugin-emotion",
 		"gatsby-plugin-image",
 		"gatsby-plugin-sharp",
+		"gatsby-transformer-sharp",
+		"gatsby-plugin-mdx",
+		{
+			resolve: "gatsby-source-filesystem",
+			options: {
+				name: `data`,
+				path: `${__dirname}/data`,
+			},
+		},
+		"gatsby-plugin-sharp",
 		{
 			resolve: "gatsby-plugin-alias-imports",
 			options: {

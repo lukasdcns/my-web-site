@@ -12,4 +12,26 @@ export const StyledMain = styled.main`
 			max-height: 400px;
 		}
 	}
+
+	@media (min-width: 768px) {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+
+		.main {
+			&__picture {
+				width: calc(40vw - 40px);
+				min-width: 200px;
+				max-width: 460px;
+				height: 500px;
+				max-height: 570px;
+
+				> picture {
+					> img {
+						object-position: -1rem;
+					}
+				}
+			}
+		}
+	}
 `;
