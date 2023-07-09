@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledNavMobileButton } from "../../styles/components";
+import { StyledNavMobileButton } from "../../../styles/components";
 
 export const MobileNavButton = ({ navIsOpened, setIsOpened }) => {
 	const handleClick = () => {

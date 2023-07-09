@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 
-import MobileNav from "@components/MobileNav";
-import { MobileNavButton } from "@components/MobileNav/mobile_button";
 import Logo from "@components/Logo";
 
 import { StyledHeader } from "@styles/components";
+import { DesktopNav, MobileNav, MobileNavButton } from "../Nav";
 
 const Header = () => {
 	const [isOpened, setIsOpened] = useState(false);
@@ -17,6 +16,7 @@ const Header = () => {
 			</div>
 			<MobileNavButton navIsOpened={isOpened} setIsOpened={setIsOpened} />
 			<MobileNav isOpened={isOpened} />
+			<DesktopNav />
 		</StyledHeader>
 	);
 };

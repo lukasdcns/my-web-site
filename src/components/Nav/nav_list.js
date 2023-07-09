@@ -1,9 +1,7 @@
-import React from "react";
 import { Link } from "gatsby";
+import React from "react";
 
-import { StyledMobileNav } from "@styles/components";
-
-const NavList = () => (
+export const NavList = () => (
 	<ul className="nav-list">
 		<li className="nav-list__item">
 			<Link className="nav-list__item__link" to="/">
@@ -22,15 +20,3 @@ const NavList = () => (
 		</li>
 	</ul>
 );
-
-const Nav = ({ isOpened }) => {
-	return (
-		<StyledMobileNav
-			className={`mobile mobile-nav ${isOpened ? "open" : "close"}`}
-		>
-			<NavList />
-		</StyledMobileNav>
-	);
-};
-
-export default Nav;

@@ -24,7 +24,11 @@ const IndexPage = () => {
 					height={400}
 				/>
 				<Card
-					title={`Moi c'est Lukas, je suis développeur web depuis ${devSince()} ans.`}
+					title={`Moi c'est Lukas, développeur depuis ${devSince()} ans.`}
+					content="Je suis très attaché à créer des solutions
+						technologiques qui apportent une valeur positive et
+						j'apprécie développer des expériences, intuitives, fluides et centrées sur
+						l'utilisateur."
 				/>
 			</StyledMain>
 		</>
