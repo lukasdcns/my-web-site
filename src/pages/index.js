@@ -24,7 +24,7 @@ const IndexPage = () => {
 					height={400}
 				/>
 				<Card
-					title={`Moi c'est Lukas, développeur depuis ${devSince()} ans.`}
+					title={`Moi c'est Lukas Descoins, développeur depuis ${devSince()} ans.`}
 					content="Je suis très attaché à créer des solutions
 						technologiques qui apportent une valeur positive et
 						j'apprécie développer des expériences, intuitives, fluides et centrées sur
@@ -37,4 +37,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <title>Lukas Descoins - Développeur</title>;
