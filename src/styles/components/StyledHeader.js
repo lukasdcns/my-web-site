@@ -48,9 +48,17 @@ export const StyledHeader = styled.header`
 		z-index: 2000;
 	}
 
+	.desktop {
+		display: none;
+	}
+
 	@media (min-width: 768px) {
 		.mobile {
 			display: none;
+		}
+
+		.desktop {
+			display: flex;
 		}
 	}
 `;

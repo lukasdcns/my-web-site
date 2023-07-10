@@ -5,7 +5,7 @@ import { NavList } from "@components/Nav";
 
 export const DesktopNav = () => {
 	return (
-		<StyledNav className="nav">
+		<StyledNav className="nav desktop">
 			<NavList />
 		</StyledNav>
 	);
