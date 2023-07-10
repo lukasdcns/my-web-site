@@ -29,7 +29,7 @@ const Contact = () => {
 		<StyledContact>
 			<a
 				className="contact-email__link"
-				href="mailto:lukas.descoins.ld@gmail.com"
+				href="mailto:contact@lukasdcns.tech"
 				target="_blank"
 				rel="noopener noreferrer"
 			>
