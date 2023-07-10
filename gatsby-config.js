@@ -41,7 +41,7 @@ module.exports = {
 				background_color: `#ffffff`,
 				theme_color: `#ffffff`,
 				display: `fullscreen`,
-				icon: `src/images/favicon_io/favicon.ico`,
+				icon: `src/images/favicon.svg`,
 				cache_busting_mode: "none",
 			},
 		},
