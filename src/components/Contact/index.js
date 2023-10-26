@@ -7,18 +7,20 @@ import { getImage } from "gatsby-plugin-image";
 const Contact = () => {
 	const data = useStaticQuery(graphql`
 		query getAllContactIcons {
-			allMdx {
-				nodes {
-					frontmatter {
-						title
-						slug
-						slug_title
-						icon {
-							childImageSharp {
-								gatsbyImageData
+			allMdx(filter: { frontmatter: { type: { eq: "contact-icon" } } }) {
+				edges {
+					node {
+						frontmatter {
+							title
+							slug
+							slug_title
+							icon {
+								childImageSharp {
+									gatsbyImageData
+								}
 							}
+							icon_alt
 						}
-						icon_alt
 					}
 				}
 			}
@@ -41,13 +43,13 @@ const Contact = () => {
 			</a>
 
 			<section className="contact-icons">
-				{data.allMdx.nodes.map(({ frontmatter }, index) => (
+				{data.allMdx.edges.map(({ node }, index) => (
 					<Icon
 						key={index}
-						slug={frontmatter.slug}
-						slug_title={frontmatter.slug_title}
-						icon={getImage(frontmatter.icon)}
-						icon_alt={frontmatter.icon_alt}
+						slug={node.frontmatter.slug}
+						slug_title={node.frontmatter.slug_title}
+						icon={getImage(node.frontmatter.icon)}
+						icon_alt={node.frontmatter.icon_alt}
 					/>
 				))}
 			</section>

@@ -15,10 +15,17 @@ export const StyledMain = styled.main`
 
 	@media (min-width: 768px) {
 		display: flex;
-		flex-direction: row-reverse;
+		flex-direction: column;
 		justify-content: center;
 
 		.main {
+			&__row-container {
+				display: flex;
+				flex-direction: row-reverse;
+				justify-content: center;
+				margin: 10px;
+			}
+
 			&__picture {
 				width: calc(40vw - 40px);
 				min-width: 200px;
