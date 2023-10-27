@@ -26,6 +26,10 @@ export const StyledMain = styled.main`
 				margin: 10px;
 			}
 
+			&__projects {
+				flex-wrap: wrap;
+			}
+
 			&__picture {
 				width: calc(40vw - 40px);
 				min-width: 200px;

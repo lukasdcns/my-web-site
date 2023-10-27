@@ -56,7 +56,7 @@ const IndexPage = () => {
 					/>
 				</section>
 
-				<section className="main__row-container projects" id="projects">
+				<section className="main__row-container main__projects" id="projects">
 					{projects.allMdx.edges.map(({ node }, index) => (
 						<ProjectCard
 							key={index}

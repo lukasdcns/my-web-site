@@ -3,14 +3,14 @@ import styled from "@emotion/styled";
 export const StyledProjectCard = styled.a`
 	text-decoration: none;
 	background-color: #f8f8f8;
-	width: calc(100% - 20px);
+	width: calc(100% -40px);
 	height: 30vh;
 	min-height: 300px;
 	max-height: 400px;
-	margin: 10px;
+	margin: 20px 10px;
 	border-radius: 25px;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
 	font-family: var(--font-regular);
 	color: #2f2f2f;
@@ -49,16 +49,31 @@ export const StyledProjectCard = styled.a`
 		}
 
 		&__right {
-			width: 60%;
+			width: 100%;
 			display: flex;
 			justify-content: flex-end;
 			align-items: center;
 
 			&__icon {
-				width: 100%;
+				width: 50%;
 				border-top-left-radius: 10px;
 				border-bottom-left-radius: 10px;
 				filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+			}
+		}
+	}
+
+	@media (min-width: 768px) {
+		width: calc((100% / 2) - 20px);
+		flex-direction: row;
+		margin-bottom: 0;
+
+		.project-card {
+			&__right {
+			width: 60%;
+
+			&__icon {
+				width: 100%;
 			}
 		}
 	}
