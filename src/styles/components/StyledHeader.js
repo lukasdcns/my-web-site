@@ -9,7 +9,6 @@ export const StyledHeader = styled.header`
 	.header {
 		display: flex;
 		align-items: center;
-		margin-left: 20px;
 
 		&__title {
 			text-transform: uppercase;

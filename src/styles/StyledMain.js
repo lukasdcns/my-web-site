@@ -23,11 +23,12 @@ export const StyledMain = styled.main`
 				display: flex;
 				flex-direction: row-reverse;
 				justify-content: center;
-				margin: 10px;
+				margin: 10px 0;
 			}
 
 			&__projects {
 				flex-wrap: wrap;
+				flex-direction: row;
 			}
 
 			&__picture {

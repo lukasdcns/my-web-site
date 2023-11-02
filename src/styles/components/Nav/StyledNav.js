@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 export const StyledNav = styled.nav`
 	.nav-list {
 		padding: 0 20px;
+		padding-right: 0px;
 		list-style: none;
 		display: flex;
 		justify-content: space-between;
