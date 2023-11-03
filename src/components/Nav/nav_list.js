@@ -1,9 +1,11 @@
 import { Link } from "gatsby";
 import React from "react";
 
-export const NavList = ({ isOpened, setIsOpened }) => {
+export const NavList = ({ isOpened = null, setIsOpened = null }) => {
 	const closeNav = () => {
-		setIsOpened(!isOpened);
+		if (isOpened !== null && setIsOpened !== null) {
+			setIsOpened(!isOpened);
+		}
 	};
 
 	return (
