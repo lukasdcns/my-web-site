@@ -4,7 +4,7 @@ export const StyledHeader = styled.header`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem 0;
+	padding: 1rem 0 1rem 20px;
 
 	.header {
 		display: flex;
@@ -52,6 +52,8 @@ export const StyledHeader = styled.header`
 	}
 
 	@media (min-width: 768px) {
+		padding: 1rem 0 1rem 0;
+
 		.mobile {
 			display: none;
 		}

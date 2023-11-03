@@ -4,7 +4,6 @@ import { BluredBG3 } from "../../images";
 export const StyledCard = styled.section`
 	background-image: url(${BluredBG3});
 	border-radius: 25px;
-	margin: 10px;
 	padding: 40px;
 	position: relative;
 	overflow: hidden;
@@ -38,6 +37,7 @@ export const StyledCard = styled.section`
 		min-width: 500px;
 		display: flex;
 		flex-direction: column;
+		margin: 0 20px 0 0;
 
 		.card {
 			&__header {

@@ -3,12 +3,11 @@ import styled from "@emotion/styled";
 export const StyledProjectCard = styled.a`
 	text-decoration: none;
 	background-color: #f8f8f8;
-	background-color: red;
 	width: calc(100% -40px);
 	height: 30vh;
 	min-height: 300px;
 	max-height: 400px;
-	margin: 20px 0;
+	margin: 20px;
 	border-radius: 25px;
 	display: flex;
 	flex-direction: column;
@@ -65,9 +64,9 @@ export const StyledProjectCard = styled.a`
 	}
 
 	@media (min-width: 768px) {
-		width: calc((100% / 2) - 20px);
+		width: calc((100% / 2) - 10px);
 		flex-direction: row;
-		margin-bottom: 0;
+		margin: 0px;
 
 		.project-card {
 			&__right {

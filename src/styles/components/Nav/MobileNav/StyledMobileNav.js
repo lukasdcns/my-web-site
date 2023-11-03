@@ -1,12 +1,13 @@
 import styled from "@emotion/styled";
 
 export const StyledMobileNav = styled.nav`
+	padding-top: 20px;
+
 	.nav-list {
 		padding: 0 20px;
 		list-style: none;
 
 		&__item {
-			margin: 30px 0;
 			&__link {
 				color: #000000;
 				text-decoration: none;
@@ -17,8 +18,10 @@ export const StyledMobileNav = styled.nav`
 				font-size: 24px;
 				line-height: 30px;
 				letter-spacing: -0.01em;
-				margin-top: 30px;
-				margin-left: 20px;
+				display: block;
+				height: 60px;
+				width: 100%;
+				padding-left: 10px;
 			}
 		}
 	}
