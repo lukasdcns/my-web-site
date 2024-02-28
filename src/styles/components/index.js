@@ -1,9 +1,10 @@
+export { StyledMain } from "./StyledMain";
 export { StyledHeader } from "./StyledHeader";
 export { StyledLogo } from "./StyledLogo";
-export { StyledMobileNav } from "./Nav/MobileNav/StyledMobileNav";
-export { StyledNav } from "./Nav/StyledNav";
-export { StyledNavMobileButton } from "./Nav/MobileNav/StyledNavMobileButton";
 export { StyledCard } from "./StyledCard";
 export { StyledProjectCard } from "./StyledProjectCard";
 export { StyledContact } from "./Contact/StyledContact";
 export { StyledContactIcon } from "./Contact/StyledContactIcon";
+export { StyledFolder } from "./StyledFolder";
+export { StyledFolderIcon } from "./StyledFolderIcon";
+export { StyledButton } from "./StyledButton";

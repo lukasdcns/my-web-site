@@ -2,26 +2,22 @@ import styled from "@emotion/styled";
 
 export const StyledContactIcon = styled.div`
 	.contact-icon {
+		width: 100%;
 		&__link {
-			width: 48px;
-			height: 48px;
+			width: 60px;
+			height: 60px;
 			border-radius: 50%;
-			background-color: rgba(255, 255, 255, 0.8);
+			background-color: #d6d2cb;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			cursor: pointer;
 			text-decoration: none;
+			margin: 0 12.5px;
 
-			&___icon {
-			}
-		}
-	}
-
-	@media (min-width: 768px) {
-		.contact-icon {
-			&__link {
-				margin-right: 15px;
+			&__icon {
+				width: 35px;
+				height: 35px;
 			}
 		}
 	}

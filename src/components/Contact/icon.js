@@ -12,7 +12,7 @@ const Icon = ({ slug, slug_title, icon, icon_alt }) => (
 			rel="noopener noreferrer"
 		>
 			<GatsbyImage
-				className="contact-icon__icon"
+				className="contact-icon__link__icon"
 				alt={icon_alt}
 				image={icon}
 			/>

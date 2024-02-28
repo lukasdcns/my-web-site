@@ -1,10 +1,11 @@
 import React from "react";
-import Header from "@components/Header";
-import { StyledMain } from "@styles/StyledMain";
-import { StaticImage, getImage } from "gatsby-plugin-image";
+import { StyledMain } from "@styles/components";
+import { StaticImage } from "gatsby-plugin-image";
 import { useStaticQuery, graphql } from "gatsby";
 import Card from "../components/Card";
-import ProjectCard from "../components/ProjectCard";
+import Contact from "../components/Contact";
+import Folder from "../components/Folder";
+import Button from "../components/Button";
 
 const IndexPage = () => {
 	const devSince = () => {
@@ -40,36 +41,35 @@ const IndexPage = () => {
 
 	return (
 		<>
-			<Header />
 			<StyledMain>
-				<section className="main__row-container">
-					<StaticImage
-						className="main__picture"
-						src="../images//me.jpg"
-						alt="Photo de Lukas Descoins"
-						width={400}
-						height={400}
-					/>
-					<Card
-						title={`Moi c'est Lukas, développeur depuis ${devSince()} ans.`}
-						content="Je suis très attaché à créer des solutions technologiques qui apportent une valeur positive et j'apprécie développer des expériences, intuitives, fluides et centrées sur l'utilisateur."
-					/>
-				</section>
+				<StaticImage
+					className="main__picture"
+					src="../images/me.jpg"
+					alt="Photo de Lukas Descoins"
+					width={400}
+					height={400}
+				/>
 
-				<section className="main__row-container main__projects" id="projects">
-					{projects.allMdx.edges.map(({ node }, index) => (
-						<ProjectCard
-							key={index}
-							slug={node.frontmatter.slug}
-							slug_title={node.frontmatter.slug_title}
-							icon={getImage(node.frontmatter.icon)}
-							icon_alt={node.frontmatter.icon_alt}
-							title={node.frontmatter.title}
-							tag={node.frontmatter.tag}
-							job={node.frontmatter.job}
-						/>
-					))}
-				</section>
+				<Card
+					title={`Moi c'est Lukas, développeur depuis ${devSince()} ans.`}
+					content="Je suis très attaché à créer des solutions technologiques qui apportent une valeur positive et j'apprécie développer des expériences, intuitives, fluides et centrées sur l'utilisateur."
+				/>
+
+				<Contact />
+
+				<div className="double-folder">
+					<Folder name={"Pro"} icons="4" />
+					<Folder name={"Freelance"} icons="4" />
+				</div>
+
+				<Folder name={"Perso"} icons="10" />
+
+				<Card
+					title={
+						"Vous pensez que l’on pourrait travailler ensemble ?"
+					}
+					text_button="Alors contactez moi !"
+				/>
 			</StyledMain>
 		</>
 	);

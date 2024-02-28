@@ -29,19 +29,6 @@ const Contact = () => {
 
 	return (
 		<StyledContact>
-			<a
-				className="contact-email__link"
-				href="mailto:contact@lukasdcns.tech"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<button className="contact-email__link__button">
-					<h2 className="contact-email__link__button__title">
-						Contactez-moi
-					</h2>
-				</button>
-			</a>
-
 			<section className="contact-icons">
 				{data.allMdx.edges.map(({ node }, index) => (
 					<Icon
