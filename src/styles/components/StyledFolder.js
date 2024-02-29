@@ -30,4 +30,12 @@ export const StyledFolder = styled.section`
 			line-height: 20px;
 		}
 	}
+
+	@media screen and (min-width: 768px) {
+		.folder {
+			&__container {
+				width: 100%;
+			}
+		}
+	}
 `;

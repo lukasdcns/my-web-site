@@ -3,6 +3,7 @@ import { BluredBG3 } from "../../images";
 
 export const StyledCard = styled.section`
 	background-image: url(${BluredBG3});
+	background-size: cover;
 	border-radius: 25px;
 	margin: 25px 0;
 	padding: 25px;
@@ -30,5 +31,9 @@ export const StyledCard = styled.section`
 			margin-top: 20px;
 			line-height: 20px;
 		}
+	}
+
+	@media screen and (min-width: 768px) {
+		margin-top: 0;
 	}
 `;

@@ -42,32 +42,35 @@ const IndexPage = () => {
 	return (
 		<>
 			<StyledMain>
-				<StaticImage
-					className="main__picture"
-					src="../images/me.jpg"
-					alt="Photo de Lukas Descoins"
-					width={400}
-					height={400}
-				/>
+				<header className="main__header">
+					<StaticImage
+						className="main__header__picture"
+						src="../images/me.jpg"
+						alt="Photo de Lukas Descoins"
+						width={400}
+						height={400}
+					/>
 
-				<Card
-					title={`Moi c'est Lukas, développeur depuis ${devSince()} ans.`}
-					content="Je suis très attaché à créer des solutions technologiques qui apportent une valeur positive et j'apprécie développer des expériences, intuitives, fluides et centrées sur l'utilisateur."
-				/>
+					<div className="main__header__right">
+						<Card
+							title={`Moi c'est Lukas, développeur depuis ${devSince()} ans.`}
+							content="Je suis très attaché à créer des solutions technologiques qui apportent une valeur positive et j'apprécie développer des expériences, intuitives, fluides et centrées sur l'utilisateur."
+							className="main__header__right__card"
+						/>
 
-				<Contact />
+						<Contact />
+					</div>
+				</header>
 
-				<div className="double-folder">
+				<div className="main__double-folder">
 					<Folder name={"Pro"} icons="4" />
 					<Folder name={"Freelance"} icons="4" />
 				</div>
-
-				<Folder name={"Perso"} icons="10" />
+				<Folder name={"Perso"} icons="4" />
 
 				<Card
-					title={
-						"Vous pensez que l’on pourrait travailler ensemble ?"
-					}
+					className="main__contact__card"
+					title="Vous pensez que l’on pourrait travailler ensemble ?"
 					text_button="Alors contactez moi !"
 				/>
 			</StyledMain>

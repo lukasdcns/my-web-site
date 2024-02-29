@@ -24,11 +24,18 @@ body {
     padding-bottom: 0;
 }
 
-.double-folder {
+.main__double-folder {
     display: flex;
     justify-content: space-between;
 }
 
-.double-folder > section {
+.main__double-folder > section {
     width: calc((100% / 2) - 12.5px);
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        width: 50%;
+        margin: 0 auto;
+    }
 }
